@@ -1,0 +1,21 @@
+
+<div>
+  <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">Overlays – Cardinality</h1>
+
+  <p>Cardinality refers to the number of occurrences of an element. For an OCA schema, the cardinality lets you define how many entries may be required for each attribute.</p>
+  <p>For example, if you allowed one and only one entry in a data record for an attribute, you would set an exact cardinality of one.</p>
+  <p>However, if you allow an array of entries for data (for example in a multi-selection of a questionnaire) you may wish to include cardinality.</p>
+  <p>For example, you are collecting survey data and have a question about what people’s favorite animals are. You want them to select between 3 and 5 animals from a list that you provide.</p>
+  <p>First you set the datatype to be an array. It will be numeric because you will use number codes for your animal choices.</p>
+  <img src="https://github.com/agrifooddatacanada/OCA_Composer/assets/136002781/bcdd7380-155d-4f7f-a5ba-a272d534d3e1" alt="Attribute type table">
+  <p>You write your label to be your question and tell the user that they will need to pick between 3 and 5 animals in the description.</p>
+  <img src="https://github.com/agrifooddatacanada/OCA_Composer/assets/136002781/86453121-a4b3-4678-bb79-04243c56859f" alt="Attribute Label Description table">
+  <p>You create an entry code table where numbers will be what is recorded in your data table, and you add English labels to each of your animals.</p>
+  <img src="https://github.com/agrifooddatacanada/OCA_Composer/assets/136002781/aa8241e7-facb-4e25-8814-1cd855e0eab0" alt="Entry codes table">
+  <p>You would then add cardinality rules that a minimum of 3 and a maximum of 5 animals must be selected.</p>
+  <img src="https://github.com/agrifooddatacanada/OCA_Composer/assets/136002781/4ce4dd89-e1c2-4352-a707-68101549b1c4" alt="Cardinality overlay page">
+  <p>For data entry, records will look like this (note that there is only one attribute in this example schema and so the data table will have only one column of data – not the world’s best survey!).</p>
+  <img src="https://github.com/agrifooddatacanada/OCA_Composer/assets/136002781/601d09f2-fc68-4223-847d-c041b604311f" alt="Dataset">
+  <p>If you only wish to specify a maximum of 5 animals selected, you can leave the minimum blank. Alternatively, to have a minimum of 3 animals selected with no maximum you would leave the maximum blank.</p>
+  
+</div>
