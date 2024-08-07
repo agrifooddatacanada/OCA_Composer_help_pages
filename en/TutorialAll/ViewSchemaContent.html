@@ -1,0 +1,69 @@
+<div>
+  <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">View Schema</h1>
+  <br>
+  <p>
+    This is a tutorial of how to create a schema using the Semantic Engine. It documents the same steps as is covered in our tutorial video.
+  </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ekMmpx_w45M?si=enGbXJ6-0qxKNQH7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+  <p>
+    All datasets have a schema, either implicit or explicity. The goal of the Semantic Engine is to take your knowledge of the data and document that explicitly using a schema.
+  </p>
+  <img src="../../images/en/Figures_help_video_what_is_a_schema.png" alt="All datasets have a schema, either implicit or explicit">
+  <p>
+  The variables or attributes of a dataset are described using a schema. A schema has multiple features that can be described by a schema such as labels and descriptions.
+  </p>
+    <img src="../../images/en/Figures_help_video_attributes_described_schema.png" alt="Attributes of a dataset are described using a schema">
+	<p>
+	You can add your dataset attributes manually to the Semantic Engine, writing them out one by one or you can import your data into the Semantic Engine and it will read the first row (and only the first row) of your dataset and extract the headers to build your attribute list. If your headers are not on the first row this import function will not work.
+	</p>
+	<p>
+	If your dataset is large you can even remove all the data leaving only the headers in the first row. Then you can import this almost empty dataset into the Semantic Engine and it will recognize your header row and autopopulate your schema.
+	</p>
+	<img src="../../images/en/Example_dairy_data.png" alt="A sample dataset for ingestion into the Semantic Engine where the variable names (headers) are in the first row.">
+	<p>
+	Looking at the data we can see a column where there are only two entries. When you have limited entries in for a specific attribute this is an excellent opportunity to confine data entry to only the items on a list (that you will provide in a later step).
+	</p>
+	<img src="../../images/en/example_dairy_location.png" alt="A data column showing only two entries are present in the dataset.">
+	<p>
+	At the Semantic Engine page you would select the sheet that contains the information you want to use and click next. You are given a brief alert that all schemas need to include some basic header information and every attribute must be given a datatype. If you don't provide this information your schema will not parse correctly.
+	</p>
+	<img src="../../images/en/example_dairy_upload_dataset.png" alt="Selecting the sheet with the dataset.">
+	<p>
+	At the schema metadata page you can view the attributes that have been automatically added, classify your schema and provide a name and description. You can also add additional languages to your schema here.
+	</p>
+	<p>
+	Every page of the Semantic Engine has places where you can find help. You can hover over any of the ?'s to find more information, and more in depth help is available on the "help with this page" button.
+	</p>
+	<img src="../../images/en/example_finding_help.png" alt="Find help by using the ?'s or clicking on the 'help with this page' button.">
+	<p>
+	On the next screen you can add details about your attributes, marking any data that might be sensitive, providing units, adding the required datatypes and where you want to restrict the data entered to values you provide in a list you can check list.
+	</p>
+	<img src="../../images/en/example_attribute_details.png" alt="Add details about your attributes.">
+	<p>
+	Entry codes (lists) allow you to limit your data entries to the ones that you provide here. You can upload your entry codes as a .csv file, or you can copy from another attribute in your schema if you have more than one list. You can also upload another schema and reuse a list that was already in the schema.
+	</p>
+	<p>For an example of entry codes vs labels you can look at this <a href="https://www.nserc-crsng.gc.ca/Help-Aide/ScholarshipCodes-CodesPourBourses_Eng.asp">NSERC code list that has numbers and labels</a>. You can also follow another <a href="https://agrifooddatacanada.ca/examples-of-entry-codes/">example of entry codes in our blog post</a>.
+	</p>
+	<img src="../../images/en/example_add_list.png" alt="Adding an entry code (list) to your schema.">
+	<p>
+	Next you can add attributes and labels to your schema. Often your label will be the same as your attribute, but you have a chance to write out a confusing label a bit better to help people understand. Labels really shine when you want to present the dataset in multiple languages, then you can add labels for each language in your schema. Descriptions are where you can really help other users understand your dataset, especially when you write it to be understood by someone outside of your research area. Read our blog post to <a href="https://agrifooddatacanada.ca/attributes-and-labels-in-oca/">learn more about labels and descriptions</a>.
+	<img src="../../images/en/example_labels_descriptions.png" alt="Adding labels and descriptions to your schema.">
+	<p>
+	There are many optional additions you can make to your schema which are called overlays. The "help with this page" button can describe them in more detail.
+	</p>
+	<img src="../../images/en/example_add_overlays.png" alt="Adding additional overlays to your schema.">
+	<p>
+	The format overlay is an especially important feature you should consider adding to your schema. Here you can add rules about what format your data is supposed to be in, like that the date must be YYYY-MM-DD etc. This is very valuable and important if you want to verify your data before using it for analysis. The rules can be read by a data verifier and your data can be evaluated for mistakes.
+	<img src="../../images/en/example_format_rules.png" alt="Adding format rules to your schema.">
+	<p>
+	After going through all these steps you have an opportunity to review everything you've added to your schema. You can go back to make corrections or you can continue and Export and Download your schemas.
+	</p>
+	<p>
+	The Semantic Engine provides two versions of your schema, the very important machine-readable version in .zip (keep it in this format), and the human-readable and archival readme.txt format. Keep your .zip becuase you can reload that version in the Semantic Engine and use it with many of the tools that have been created such as making a Data Entry Excel spreadsheet or verifying your data according to the rules held by the schema.
+	</p>
+	
+  <br>
+  <br>
+  </div>
+
