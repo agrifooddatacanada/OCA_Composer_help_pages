@@ -1,0 +1,154 @@
+<div>
+<h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">Conseils pour la conception d'ensembles de données</h1>
+<p>Recommandation : le format long des ensembles de données est recommandé pour la documentation des schémas.</p>
+<p>
+Les données doivent aider à répondre à des questions spécifiques ou à atteindre des objectifs spécifiques, ce qui influence la manière dont les données peuvent être représentées. Par exemple, l'analyse dépend souvent de données dans un format spécifique, généralement appelé format large ou format long. Les ensembles de données larges sont plus intuitifs et plus faciles à comprendre lorsqu'il y a relativement peu de variables, tandis que les ensembles de données longs sont plus flexibles et efficaces pour gérer des données complexes et structurées avec de nombreuses variables ou des mesures répétées. Les chercheurs et les analystes de données transforment souvent les données entre ces formats en fonction des exigences de leur analyse.
+</p>
+<br>
+<p>
+<strong style="font-size: 24px;">Ensemble de données large :</strong>
+<br>
+<br>
+<strong>Format :</strong>
+Dans un ensemble de données large, chaque variable ou attribut possède sa propre colonne et chaque observation ou point de données est une seule ligne. Cette représentation est généralement observée dans Excel.
+<br>
+<strong>Structure :</strong>
+Elle présente généralement une structure plus large avec de nombreuses colonnes, ce qui la rend plus facile à lire et à comprendre lorsqu'il y a relativement peu de variables.
+<br>
+<strong>Cas d'utilisation :</strong>
+Les ensembles de données larges sont souvent utilisés pour les données récapitulatives ou agrégées et conviennent aux opérations statistiques simples comme les moyennes et les sommes.
+<br>
+<br>
+Par exemple, voici un ensemble de données au format large :
+<br>
+<table border="1">
+<thead>
+<tr>
+<th>ID</th>
+<th>TRAITEMENT</th>
+<th>HT1</th>
+<th>HT2</th>
+<th>HT3</th>
+<th>HT4</th>
+<th>HT5</th>
+<th>HT6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">01</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: centre;">26</td>
+<td style="text-align: center;">34</td>
+<td style="text-align: center;">55</td>
+</tr>
+<tr>
+<td style="text-align: center;">02</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">45</td>
+</tr>
+<tr>
+<td style="text-align: centre;">03</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">50</td>
+</tr>
+<tr>
+<td style="text-align: center;">04</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;">38</td>
+<td style="text-align: center;">42</td>
+</tr>
+</tbody>
+</table>
+</p>
+<br>
+<p>
+<strong style="font-size: 24px;">Ensemble de données long :</strong> <br>
+<br>
+<strong>Format : </strong>
+Dans un ensemble de données long, il y a moins de colonnes et les données sont organisées avec plusieurs lignes pour chaque combinaison unique de variables. En général, vous avez des colonnes pour la « variable », la « valeur » et potentiellement d'autres identifiants catégoriels.
+<br>
+<strong>Structure : </strong>
+Elle est plus compacte et orientée verticalement, ce qui facilite son utilisation lorsque vous avez un grand nombre de variables ou que vous devez effectuer des transformations de données complexes.
+<br>
+<strong>Cas d'utilisation : </strong>
+Les ensembles de données longs sont particulièrement adaptés au stockage et à l'analyse de données comportant plusieurs mesures ou observations au fil du temps ou dans différentes catégories. Ils facilitent les analyses statistiques avancées telles que la régression et la modélisation à effets mixtes. Dans Excel, vous pouvez utiliser des tableaux croisés dynamiques pour afficher les statistiques récapitulatives des ensembles de données longs.
+<br>
+<br>
+Par exemple, voici quelques-unes des mêmes données représentées dans un format long :
+<br>
+<table border="1">
+<thead>
+<tr>
+<th>ID</th>
+<th>TRAITEMENT</th>
+<th>SEMAINE</th>
+<th>TAILLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">01</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr>
+<td style="text-align: center;">01</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">18</td>
+</tr>
+<tr>
+<td style="text-align: center;">01</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">19</td>
+</tr>
+<tr>
+<td style="text-align: center;">01</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">26</td>
+</tr>
+<tr>
+<td style="text-align: center;">01</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">34</td>
+</tr>
+<tr>
+<td style="text-align: center;">01</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">55</td>
+</tr>
+</tbody>
+</table>
+<br>
+Les données au format long sont un meilleur choix lors du choix d'un format à documenter avec un schéma, car elles sont plus faciles à documenter et plus claires à comprendre. Par exemple, les en-têtes de colonne (attributs) au format large sont répétitifs et cela entraîne une documentation dupliquée (par exemple, HT1 est la taille du sujet mesurée à la fin de la semaine 1 ; HT2 est la taille du sujet mesurée à la fin de la semaine 2, etc.). Il est également moins flexible car chaque semaine supplémentaire nécessite une colonne supplémentaire et donc un autre attribut décrit dans le schéma. Cela signifie que chaque fois que vous ajoutez une variable, vous modifiez la structure de la base de capture du schéma, ce qui réduit l'interopérabilité.
+<br>
+<br>
+La documentation d'un schéma au format long est plus flexible car elle est plus générale. Cela rend le schéma réutilisable pour d'autres expériences, soit par le chercheur, soit par d'autres. Il est également plus facile de réutiliser les données et de les combiner avec des expériences similaires.
+<br>
+<br>
+Au moment de l'analyse, les données peuvent être transformées de longues en larges si nécessaire et de nombreux programmes d'analyse de données ont des fonctions spécialisées qui aident les chercheurs dans cette tâche.
+</p>
+</div>

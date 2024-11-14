@@ -1,0 +1,66 @@
+<div>
+<h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">Détails de l'attribut</h1>
+
+<p>Sur la page des détails de l'attribut, vous pouvez modifier les propriétés de chaque attribut présent dans votre schéma.</p>
+
+<h3>Nom de l'attribut</h3>
+
+<p>Vous pouvez modifier chaque nom d'attribut et réorganiser les attributs.</p>
+<p>Recommandations :
+<ul>
+<li>Définissez la longueur maximale sur 32 caractères</li>
+<li>Commencez toujours les noms de variables par une lettre</li>
+<li>Les nombres peuvent être utilisés n'importe où dans le nom de la variable APRÈS le premier caractère</li>
+<li>N'utilisez pas d'espaces vides ou vides</li>
+</ul></p>
+<p>
+Les noms d'attribut sont reconnus par différents programmes (lisibles par machine) et donc un bon nom d'attribut est celui qui ne causera pas de problèmes en aval.
+</p>
+
+<h3>Sensible</h3>
+
+<p>
+Les attributs sensibles vous permettent de spécifier un attribut sensible pour les données sensibles (par exemple, les noms de personnes, les pièces d'identité officielles, la date de naissance, etc.). Marquer une entrée avec une coche vous permettra de signaler tous les attributs dans lesquels des informations d'identification sur les entités peuvent être capturées.
+</p>
+
+<ul>
+<li>Le fait de signaler un attribut agit comme une alerte aux utilisateurs de données pour qu'ils traitent les données comme étant à haut risque tout au long du cycle de vie des données et qu'ils les chiffrent ou les suppriment à tout moment.</li>
+<li>Pour obtenir de l'aide sur l'évaluation des attributs qui peuvent être sensibles, vous pouvez lire les conseils dans le <a style="color: #94002a;" href="https://docs.kantarainitiative.org/Blinding-Identity-Taxonomy-Report-Version-1.0.html" target="_blank">Rapport sur la taxonomie des identités aveuglantes</a> de l'Initiative Kantara.</li>
+</ul>
+
+<h3>Unité</h3>
+
+<p>Les unités sont les endroits où vous pouvez décrire les unités de chaque attribut si nécessaire.</p>
+
+<h3>Type</h3>
+
+<ul>
+<li>Texte : texte, des entrées à une seule lettre aux champs de texte non structuré. Les nombres sont du texte si vous ne pouvez pas effectuer d'opérations mathématiques dessus, par exemple un numéro de téléphone est du texte.</li>
+<li>Numérique : nombres. Si vous ne pouvez pas le mettre dans une « calculatrice » et effectuer directement des opérations mathématiques dessus, alors vous avez du texte. Par exemple, la plage « 1056-1067 » est du texte, la valeur a10 est du texte car elle contient une lettre dans le nom, etc.</li>
+<li>Booléen : un type de données où les données n'ont que deux variables possibles : vrai ou faux</li>
+<li>Binaire : un type de données qui définit un signal de code binaire</li>
+<li>DateTime : un type de données qui définit les dates. Les formats courants incluent les dates (par exemple, AAAA-MM-JJ), les heures (par exemple, hh:mm:ss), les dates et heures concaténées (par exemple, AAAA-MM-JJThh:mm:ss.sss+zz:zz) et les durées (par exemple, PnYnMnD)</li>
+<li>Tableau [type d'attribut] : un type de données qui définit une structure contenant plusieurs éléments de données ou éléments du même type de données</li>
+</ul>
+
+<p>
+Voici un exemple de plusieurs types de données.
+</p>
+<img src="../../images/en/exemple_de_type_de_données.png" alt="exemples de différents types de données.">
+
+<h3>Liste</h3>
+
+<p>
+Pour mieux comprendre les listes (alias codes d'entrée), vous pouvez trouver un exemple concret dans notre <a href="https://agrifooddatacanada.ca/examples-of-entry-codes/" target="_blank">article de blog sur les codes d'entrée</a>.
+<p>
+Une liste est une fonctionnalité très utile qui permet à l'auteur du schéma de limiter les données qui peuvent être saisies pour un attribut spécifique. Par exemple, si votre variable comporte des catégories, vous souhaiterez spécifier vos catégories dans une liste. Sélectionnez une liste si vous souhaitez créer une liste d'entrées acceptables parmi lesquelles l'utilisateur pourra faire son choix.
+</p>
+
+<p>
+Si l'utilisateur ne peut sélectionner qu'une seule entrée valide dans la liste (par exemple, une liste dans laquelle l'utilisateur sélectionnera l'emplacement de l'échantillon), votre type de données sera quelque chose d'approprié comme « Texte » ou « Numérique ». Si vous autorisez la sélection multiple dans la liste (par exemple, une liste dans laquelle l'utilisateur peut sélectionner tout ce qui s'applique), alors votre type de données est un tableau.
+</p>
+
+<p>Regardez ce didacticiel YouTube (anglais) pour un exemple concret de sélection de types de données, de commentaires de qualité et d'utilisation de listes.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mh2Sy-C45xo?si=_VFYpFS2Kb32khi4" title="Lecteur vidéo YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
