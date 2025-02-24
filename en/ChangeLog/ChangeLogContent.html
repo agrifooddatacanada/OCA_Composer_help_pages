@@ -1,17 +1,17 @@
 <div>
   <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">Semantic Engine Changelog</h1>
   <p>
-    2025.02.05 - Update to OCA Package
+    <b>2025.02.05 - Update to OCA Package</b>
   </p>
   <ul>
-    <li>OCA schemas are released as '[OCA Package](https://github.com/agrifooddatacanada/OCA_package_standard)' and in a single .json file instead of the previous .zip format</li>
-    <li>OCA Package consists of two parts: the core OCA syntax as bundle, and extensions which contains custom overlays such as the ordering overlay</li>
-    <li>Support for ordering of attributes and entry codes means that things are not sorted by default alphabetically.</li>
+    <li>OCA schemas are now available as <a href="https://github.com/agrifooddatacanada/OCA_package_standard">OCA Package</a> in the format of a single .json file instead of the previous .zip file</li>
+    <li>OCA Package consists of two parts: the core OCA syntax as a Schema Bundle, and Extensions which contains custom overlays such as the ordering overlay</li>
+    <li>OCA Package now supports attribute and entry code ordering. Ordering is now user determined instead of being sorted alphabetically.</li>
     <li>The Schema bundle (a component of package) follows the 1.0.2 release of the OCA Specification. Major changes of this include:
     <ul>
       <li>Type of all overlays increments to version 1.0.2</li>
-      <li>Array Datatypes syntax has changed, from array[Numeric] to [Numeric] (etc.)</li>
-      <li>Label of the digest changes from "digest:" to "d:"</li>
+      <li>Array DataTypes syntax has changed, from "Array[Text]" to ["Text"] (etc.)</li>
+      <li>Label of the digest changes from "digest": to "d":</li>
     </ul>
     </li>
   </ul>
