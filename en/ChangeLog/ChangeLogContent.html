@@ -1,7 +1,7 @@
 <div>
   <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">Semantic Engine Changelog</h1>
   <h2>Announcement</h2>
-  <p>Coming early March, the Semantic Engine will move to OCA version 1.0.2 and introduce the OCA Package structure. For our users this means the Semantic Engine will produce and consume .jsons instead of .zips of schemas. All tooling continues to work the same and the Semantic Engine can continue to read and use .zip schemas. The file switch will help our Mac users who have some challenges using .zips and will also make it easier to deposit the schemas in Borealis (Dataverse) repositories.</p>
+  <p>Coming early March, the Semantic Engine will move to OCA version 1.1 and introduce the OCA Package structure. For our users this means the Semantic Engine will produce and consume .jsons instead of .zips of schemas. All tooling continues to work the same and the Semantic Engine can continue to read and use .zip schemas. The file switch will help our Mac users who have some challenges using .zips and will also make it easier to deposit the schemas in Borealis (Dataverse) repositories.</p>
   <p>With the introduction of OCA Package structure we can now preserve attribute order, meaning that users will see improvements where their column headers can be kept in the original order as recorded in the data. Finally, any users with tools that use the old .zip format will be able to export their files in legacy .zip format.</p>
 
   <h2>Changelog</h2>
@@ -14,9 +14,10 @@
     <li>OCA Package now supports attribute and entry code ordering. Ordering is now user determined instead of being sorted alphabetically.</li>
     <li>The Schema bundle (a component of package) follows the 1.0.2 release of the OCA Specification. Major changes of this include:
     <ul>
-      <li>Type of all overlays increments to version 1.0.2</li>
+      <li>Type of all overlays increments to version 1.1</li>
       <li>Array DataTypes syntax has changed, from "Array[Text]" to ["Text"] (etc.)</li>
       <li>Label of the digest changes from "digest": to "d":</li>
+      <li>Attribute names are limited to the following characters: numbers: 0-9, letters: a-z and A-Z, underline: _ hyphen: - period:.</li>
     </ul>
     </li>
   </ul>
