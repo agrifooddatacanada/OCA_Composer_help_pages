@@ -1,7 +1,7 @@
 <div>
 <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">Journal des modifications du moteur sémantique</h1>
 <h2>Annonce</h2>
-<p>Début mars, le moteur sémantique passera à la version 1.0.2 d'OCA et introduira la structure du package OCA. Pour nos utilisateurs, cela signifie que le moteur sémantique produira et consommera des fichiers .jsons au lieu de fichiers .zip de schémas. Tous les outils continuent de fonctionner de la même manière et le moteur sémantique peut continuer à lire et à utiliser les schémas .zip. Le changement de fichier aidera nos utilisateurs Mac qui ont des difficultés à utiliser les fichiers .zips et facilitera également le dépôt des schémas dans les référentiels Borealis (Dataverse).</p>
+<p>Début mars, le moteur sémantique passera à la version 1.1 d'OCA et introduira la structure du package OCA. Pour nos utilisateurs, cela signifie que le moteur sémantique produira et consommera des fichiers .jsons au lieu de fichiers .zip de schémas. Tous les outils continuent de fonctionner de la même manière et le moteur sémantique peut continuer à lire et à utiliser les schémas .zip. Le changement de fichier aidera nos utilisateurs Mac qui ont des difficultés à utiliser les fichiers .zips et facilitera également le dépôt des schémas dans les référentiels Borealis (Dataverse).</p>
 <p>Avec l'introduction de la structure du package OCA, nous pouvons désormais préserver l'ordre des attributs, ce qui signifie que les utilisateurs verront des améliorations où leurs en-têtes de colonne peuvent être conservés dans l'ordre d'origine tel qu'il est enregistré dans les données. Enfin, tous les utilisateurs disposant d'outils utilisant l'ancien format .zip pourront exporter leurs fichiers au format .zip hérité.</p>
 
 <h2>Journal des modifications</h2>
@@ -12,11 +12,12 @@
 <li>Les schémas OCA sont désormais disponibles sous la forme d'un <a href="https://github.com/agrifooddatacanada/OCA_package_standard">package OCA</a> au format d'un seul fichier .json au lieu du fichier .zip précédent</li>
 <li>Le package OCA se compose de deux parties : la syntaxe OCA de base sous forme de bundle de schémas et les extensions qui contiennent des superpositions personnalisées telles que la superposition de commande</li>
 <li>Le package OCA prend désormais en charge la commande des attributs et des codes d'entrée. Le classement est désormais déterminé par l'utilisateur au lieu d'être trié par ordre alphabétique.</li>
-<li>Le bundle Schema (un composant du package) suit la version 1.0.2 de la spécification OCA. Les principaux changements incluent :
+<li>Le bundle Schema (un composant du package) suit la version 1.1 de la spécification OCA. Les principaux changements incluent :
 <ul>
-<li>Le type de toutes les superpositions passe à la version 1.0.2</li>
+<li>Le type de toutes les superpositions passe à la version 1.1</li>
 <li>La syntaxe des types de données de tableau a changé, de "Array[Text]" à ["Text"] (etc.)</li>
 <li>L'étiquette du condensé passe de "digest": à "d":</li>
+  <li>Les noms d'attributs sont limités aux caractères suivants : chiffres : 0-9, lettres : a-z et A-Z, soulignement : _, trait d'union : -, point :.</li>
 </ul>
 </li>
 </ul>
