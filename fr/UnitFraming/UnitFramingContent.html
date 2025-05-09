@@ -1,15 +1,20 @@
 <div>
-  <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">Overlays - Unit Framing</h1>
+  <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">Superpositions - Encadrement des unités</h1>
   <br>
-<h3>Pourquoi les unités normalisées sont importantes</h3>
-<p>
-Les unités peuvent être écrites de différentes manières. Par exemple, l'unité de concentration « micromolaire » peut apparaître sous la forme <code>uM</code>, <code>μM</code>, <code>umol/L</code>, <code>μmol/l</code> ou <code>umol<sup>-1</sup></code>. Cette variation peut entraîner des confusions ou des erreurs d'interprétation des données.
-</p>
-<p>
-Pour garantir la clarté, la cohérence et l'interopérabilité entre les ensembles de données et les systèmes, il est important d'utiliser des formats d'unités normalisés. Les normes permettent d'éliminer toute ambiguïté, notamment dans les environnements collaboratifs ou automatisés.
-</p>
-<p>
-Le <strong>Code unifié des unités de mesure » ​​(UCUM) est un système largement adopté pour définir et coder les unités. UCUM fournit un format univoque et lisible par machine pour spécifier les unités, favorisant ainsi l'échange et l'interprétation précis des données. </p>
-<p>Le moteur sémantique prend en charge les unités UCUM via un cadre d'unités superposé. Cela signifie que vous pouvez écrire les unités telles que vous les connaissez dans le cadre d'unités superposé, puis associer l'unité choisie (par exemple, <code>acre</code>) à la terminologie officielle UCUM (par exemple, <code>[acr_us]</code>) dans le cadre d'unités superposé.</p>
-
+  <h3>Pourquoi les unités normalisées sont importantes</h3>
+  <p>
+    Les unités peuvent être écrites de nombreuses façons différentes. Par exemple, l’unité de concentration « micromolaire » peut apparaître comme <code>uM</code>, <code>μM</code>, <code>umol/L</code>, <code>μmol/l</code> ou <code>umol<sup>-1</sup></code>. Cette variation peut entraîner de la confusion ou des erreurs dans l’interprétation des données.
+  </p>
+  <p>
+    Pour garantir la clarté, la cohérence et l’interopérabilité entre les ensembles de données et les systèmes, il est important d’utiliser des formats d’unités normalisés. Les normes permettent d’éliminer toute ambiguïté, en particulier dans des environnements collaboratifs ou automatisés.
+  </p>
+  <p>
+    Un système largement adopté pour définir et encoder les unités est le <strong><a href="https://ucum.org/ucum">Code unifié pour les unités de mesure (UCUM)</a></strong>. UCUM fournit un format non ambigu et lisible par machine pour spécifier les unités, facilitant ainsi l’échange et l’interprétation précis des données. UCUM n’est pas exhaustif et ne décrit pas toutes les unités existantes. Les chercheurs peuvent utiliser des unités qui ne peuvent pas être décrites dans UCUM.
+  </p>
+  <p>
+    Le moteur sémantique prend en charge les unités UCUM via une superposition d’encadrement des unités. Cela signifie que vous pouvez écrire les unités telles que vous les connaissez dans la superposition d’unités, puis associer votre unité choisie (par exemple <code>acre</code>) à la terminologie officielle UCUM (par exemple <code>[acr_us]</code>) dans la superposition d’encadrement des unités.
+  </p>
+  <p>
+    Lorsque vous commencez à ajouter une superposition d’encadrement des unités, le moteur sémantique recherche des correspondances dans notre <a href="https://github.com/agrifooddatacanada/UCUM_agri-food_units">tableau de codes UCUM</a>. S’il y a une correspondance, elle est ajoutée ici en tant que recommandation. Lors de l’ajout de l’encadrement des unités, examinez toutes les unités suggérées et apportez les corrections nécessaires. Vous pouvez également rechercher et ajouter des unités qui n’ont pas reçu de recommandation. Il est acceptable de laisser des unités non appariées si vous ne trouvez pas l’unité appropriée dans les codes UCUM.
+  </p>
 </div>

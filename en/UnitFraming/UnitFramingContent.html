@@ -9,8 +9,10 @@
   To ensure clarity, consistency, and interoperability across datasets and systems, it's important to use standardized unit formats. Standards help eliminate ambiguity, especially in collaborative or automated environments.
 </p>
 <p>
-  One widely adopted system for defining and encoding units is the <strong>Unified Code for Units of Measure (UCUM)</strong>. UCUM provides an unambiguous, machine-readable format for specifying units, supporting accurate data exchange and interpretation.
+  One widely adopted system for defining and encoding units is the <strong><a href="https://ucum.org/ucum">Unified Code for Units of Measure (UCUM)</a></strong>. UCUM provides an unambiguous, machine-readable format for specifying units, supporting accurate data exchange and interpretation. UCUM is not comprehensive and does not describe every single unit in use. Researchers may be using units that are not capable of being described in UCUM. 
 </p>
-<p>The Semantic Engine supports UCUM units through a unit framing overlay. What this means is that you can write the units as you are familiar with them in the unit overlay, and then map your chosen unit (e.g. <code>acre</code>) to the official UCUM terminology (e.g. <code>[acr_us]</code>) in the unit framing overlay.</p>
+<p>The Semantic Engine supports UCUM units through a unit framing overlay. What this means is that you can write the units as you are familiar with them in the unit overlay, and then map your chosen unit (e.g. <code>acre</code>) to the official UCUM terminology (e.g. <code>[acr_us]</code>) in the unit framing overlay.</p>.
+
+<p>When you start with adding a unit framing overlay, the Semantic Engine looks for matches in our <a href="https://github.com/agrifooddatacanada/UCUM_agri-food_units">UCUM code table</a>. If there is a match it adds it here as a recommendation. When adding unit framing, look at all the suggested units and make corrections as necessary. You can also search and add units for ones that didn't have a recommendation. It is ok to leave units unmatched if you cannot find the suitable unit in the UCUM codes.</a>
 
 </div>
