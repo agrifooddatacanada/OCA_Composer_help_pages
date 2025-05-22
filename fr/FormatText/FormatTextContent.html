@@ -15,4 +15,8 @@
 <h3>Tableaux</h3>
 <p>Pour les entrées de données qui sont des tableaux, les règles de format s'appliquent aux éléments individuels du tableau. Par exemple, la règle de format pour une seule entrée de texte est la même règle de format utilisée pour un tableau des mêmes entrées de texte.</p>
 <p>Overlays Capture Architecture ne spécifie pas le séparateur de tableau requis pour les tableaux, car différents systèmes auront des représentations différentes pour les tableaux. Notre recommandation pour les données tabulaires Excel ou .csv est de séparer les données par un point-virgule (;) et d'inclure le texte entre guillemets (").</p>
+<h3>Règle de Format Personnalisée</h3>
+<p>Si vous ne sélectionnez pas une règle de format dans la liste déroulante, vous avez la possibilité d’écrire votre propre règle de format en expressions régulières, ou regex. Les regex sont des séquences de caractères qui définissent des motifs de recherche, principalement utilisées pour la correspondance et la manipulation de chaînes de texte. Elles permettent de trouver, extraire, remplacer ou valider du texte selon des critères complexes. Derrière les règles de format fournies se trouvent des regex, documentées dans le <a style="color: #94002a" href="https://github.com/agrifooddatacanada/format_options" target="_blank">dépôt GitHub format_options</a>.</p>
+<p>Si vous choisissez de fournir votre propre regex, assurez-vous de vérifier son bon fonctionnement à l’aide de l’outil de vérification des données web du moteur sémantique afin de garantir que la regex fonctionne comme prévu.</p>
+
 </div>

@@ -16,4 +16,8 @@
   <h3>Arrays</h3>
   <p>For data entries that are arrays, the format rules apply to the individual elements of the array. For example, the format rule for a single text entry is the same format rule used for an array of the same text entries.</p>
   <p>Overlays Capture Architecture does not specify the array separator that is required for arrays because different systems will have different representations for arrays. Our recommendation for Excel or .csv tabular data is to separate data with a semi-colon (;) symbol and to include text within double quotes (").</p>
+  <h3>Custom Format Rule</h3>
+  <p>If you don't select a Format Rule from the dropdown list, you have the opportunity to write your own format rule in Regular expressions, or regex. Regex are sequences of characters that define search patterns, primarily used for string matching and manipulation. They allow you to find, extract, replace, or validate text based on complex criteria. Behind the supplied format rules are regex which are documented in the <a style="color: #94002a" href="https://github.com/agrifooddatacanada/format_options" target="_blank">format_options GitHub repository</a>.</p>
+  <p>If you choose to supply your own regex be sure to verify its functionality using the web data verification tool of the Semantic Engine to ensure the regex is working the way that you expect it to.</p>
+  
 </div>
