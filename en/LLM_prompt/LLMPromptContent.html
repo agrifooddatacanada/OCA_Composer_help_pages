@@ -1,0 +1,44 @@
+<div>
+  <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">LLM Prompt</h1>
+
+<p>Here is an example of an Overlays Capture Architecture (OCA) schema package written in JSON.<p>
+
+<p>{"d":"EJKLV3tjln8aZUq1v2HXmk0DmcMHdPKXiIkzbzVmdfXx","type":"oca_package/1.0","oca_bundle":{"v":"OCAA11JSON00048b_","bundle":{"v":"OCAS11JSON00046e_","d":"ELZDWyNS29XCZ5esEoHmOMIXfQB3e9y98NNqDzW12uGR","capture_base":{"d":"EGl4U83_6_fEUdQn1kffWWap0u71um27rIqUg9nSAJsI","type":"spec/capture_base/1.1","attributes":{"v1":"Numeric","v2":"Text","v3":"DateTime"},"classification":"","flagged_attributes":[]},"overlays":{"information":[{"d":"EEukjvgxKrEAySsUN_g4WVUDtlUeuyElNXsxx6geDDrm","capture_base":"EGl4U83_6_fEUdQn1kffWWap0u71um27rIqUg9nSAJsI","type":"spec/overlays/information/1.1","language":"eng","attribute_information":{"v1":"age of the person in years","v2":"last name of the person","v3":"date the person visited the park"}}],"label":[{"d":"EFTdn74i9tpvJ4W-2E9U5MuRG3XOdoYIZtSFoY9YHZ66","capture_base":"EGl4U83_6_fEUdQn1kffWWap0u71um27rIqUg9nSAJsI","type":"spec/overlays/label/1.1","language":"eng","attribute_categories":[],"attribute_labels":{"v1":"age","v2":"name","v3":"date of visit"},"category_labels":{}}],"meta":[{"d":"EMNGNuO9zz0YyONEAChPj9AckyVrYQ3jSJiIq2LNGWpG","capture_base":"EGl4U83_6_fEUdQn1kffWWap0u71um27rIqUg9nSAJsI","type":"spec/overlays/meta/1.1","language":"eng","description":"A description of the schema.","name":"Schema name"}]}},"dependencies":[]},"extensions":{"adc":{"EGl4U83_6_fEUdQn1kffWWap0u71um27rIqUg9nSAJsI":{"d":"EJzhTMMNiIkrlMBT__s7g1wLgyNnG0NWowydCHKoVXkh","type":"community/adc/extension/1.0","overlays":{"ordering":{"d":"EOMjYokuRJ20OTfJhrcm41G5rCKfUgliXHQPjfTBXU5K","type":"community/overlays/adc/ordering/1.1","attribute_ordering":["v1","v2","v3"],"entry_code_ordering":{}},"sensitive":{"d":"EH03eeS641_CQzycegyrynCne8eRoKyeJoAUD9QlSwnk","type":"community/overlays/adc/sensitive/1.1","sensitive_attributes":[]}}}}}}</p>
+
+<p>It has three attributes, age of the person, name of the person and date the person visited the park. For each there is a description and a label. The attributes themselves are v1, v2 and v3. Attribute names MUST contain only the following characters: numbers: 0-9, letters: a-z and A-Z, underline: _ hyphen: - period:. Convert any attributes suggested to strings with only those characters. (e.g. the symbol % must be converted to percent_)</p>
+
+<p>Allowable datatypes are:
+
+    Text: text, from single-letter entries to fields of unstructured text. Numbers are text if you can't perform mathematical operations on them, e.g. a phone number is text.
+    Numeric: numbers. If you can't put it into a 'calculator' and directly perform mathematical operations on it, then you have text. For example, the range "1056-1067" is text, the value a10 is text because it has a letter in the name etc.
+    Boolean: a data type where the data only has two possible values: true or false
+    BinaryFile: a data type that defines a binary code signal (a binary file)
+    DateTime: a data type that defines dates. Common formats include dates (e.g., YYYY-MM-DD), times (e.g., hh:mm:ss), dates and times concatenated (e.g., YYYY-MM-DDThh:mm:ss.sss+zz:zz), and durations (e.g., PnYnMnD)
+    Array [attribute type]: a data type that defines a structure that holds several data items or elements of the same data type</p>
+
+<p>Use the attribute name and description (if present) to suggest what the datatype should be.
+
+Structures like this "d":"EKr7EBTFA5n4uqEzubcKx5zutWT9yE5fUBlwUqNEku-Y" are calculated digests and should be replaced with a string of #'s.
+
+All OCA JSON formatted schemas must include - attribute, meta (the general description of the schema), labels (human-readable labels for the attributes) and descriptions. Labels should be copies of the attribute if they are not provided in the input data and they can include any type of character.
+
+All schemas must include extensions both ordering and sensitive.
+
+Generated schemas must be the valid JSON only downloadable file. Do not include any line breaks, explanation or extra text.</p>
+
+<p>Here is another example schema with additional overlays which are not required:
+{"d":"EGzLCLFksQNhsfSlyr9kXR9Qoq-W5oWxZp1IWoKwDkGR","type":"oca_package/1.0","oca_bundle":{"v":"OCAA11JSON000b53_","bundle":{"v":"OCAS11JSON000b36_","d":"EIHGftZS12RzGZiDezhxmmElUi2CRT2VFgTLQCmGPrXS","capture_base":{"d":"EImf4Cm1bUr8uPZ76DgFWXlT54_ntRf4bDYarXsyyytV","type":"spec/capture_base/1.1","attributes":{"Age":"Numeric","BreastWt":"Numeric","Farm":"Text","Glucose":"Numeric","Lipase":"Numeric","LiveWt":"Numeric"},"classification":"RDF401","flagged_attributes":[]},"overlays":{"information":[{"d":"ECAG9trAWl-3GEewwXdbjDlCQpC67MdM0ccEgdGY0PpI","capture_base":"EImf4Cm1bUr8uPZ76DgFWXlT54_ntRf4bDYarXsyyytV","type":"spec/overlays/information/1.1","language":"eng","attribute_information":{"Age":"age of bird in days","BreastWt":"Breast weight in grams","Farm":"a letter given to the farm for identification","Glucose":"glucose content in mmol/L","Lipase":"lipase content in U/L","LiveWt":"weight in grams at 28 days"}},{"d":"EN-OXXKXBEc6Chhxh5oWbhnIc-iB99smaXUrQpfziEdY","capture_base":"EImf4Cm1bUr8uPZ76DgFWXlT54_ntRf4bDYarXsyyytV","type":"spec/overlays/information/1.1","language":"fra","attribute_information":{"Age":"Age de l'animal compté en jours","BreastWt":"Poids de la poitrine en gramme","Farm":"Letter assignee a chaque ferme pour identification","Glucose":"Concentration de glucose en mmol/L","Lipase":"Concentration de glucose en U/L","LiveWt":"Poids vif à 28 jours en gramme"}}],"label":[{"d":"EITT7CEj1IJxzHioJ00k1626_SkFwTS5V0wA9k68WHaS","capture_base":"EImf4Cm1bUr8uPZ76DgFWXlT54_ntRf4bDYarXsyyytV","type":"spec/overlays/label/1.1","language":"fra","attribute_categories":[],"attribute_labels":{"Age":"Age de l'animal","BreastWt":"Poids de la poitrine","Farm":"Lettre itenditifant la ferme","Glucose":"Concentration de glucose","Lipase":"Concentration de lipase","LiveWt":"Poids vif"},"category_labels":{}},{"d":"EI_5RlJlA29yZ0DEtldNCqvIyj_LTM8pJT8eXeBkBYnV","capture_base":"EImf4Cm1bUr8uPZ76DgFWXlT54_ntRf4bDYarXsyyytV","type":"spec/overlays/label/1.1","language":"eng","attribute_categories":[],"attribute_labels":{"Age":"Bird Age","BreastWt":"Breast Weight","Farm":"Farm Letter Indentifier","Glucose":"Glucose Concentration","Lipase":"Lipase Content","LiveWt":"Live Weight"},"category_labels":{}}],"meta":[{"d":"EIkuzoyHMfhpu80fccB6uqdGQEthzKEEcI4zzbih2vxJ","capture_base":"EImf4Cm1bUr8uPZ76DgFWXlT54_ntRf4bDYarXsyyytV","type":"spec/overlays/meta/1.1","language":"fra","description":"Mesures de la santée intestinale des poulets","name":"santée intestinale des poulets"},{"d":"EJJQlyGWFYXouCsd4NlJhKgT6EE6Sd7yQlgjkNJRzG1O","capture_base":"EImf4Cm1bUr8uPZ76DgFWXlT54_ntRf4bDYarXsyyytV","type":"spec/overlays/meta/1.1","language":"eng","description":"Measurements of chicken gut health","name":"Chicken gut health"}],"unit":{"d":"ELkmj4EhALi-owVaRQGdMamCKAZJ5C1F17NIC8NRaM1Q","capture_base":"EImf4Cm1bUr8uPZ76DgFWXlT54_ntRf4bDYarXsyyytV","type":"spec/overlays/unit/1.1","attribute_unit":{"Age":"days","BreastWt":"g","Glucose":"mmol/L","Lipase":"U/L","LiveWt":"g"}}}},"dependencies":[]},"extensions":{"adc":{"EImf4Cm1bUr8uPZ76DgFWXlT54_ntRf4bDYarXsyyytV":{"d":"EBz11RbUkKu4gFFaziFUAfIuQoJgYcN_Q1NsZNC3ZJ6d","type":"community/adc/extension/1.0","overlays":{"ordering":{"d":"EKGG66SKHqfuxCG_zigDJDWghppGsK9ullrfoNlGdeRm","type":"community/overlays/adc/ordering/1.1","attribute_ordering":["Farm","Age","LiveWt","BreastWt","Glucose","Lipase"],"entry_code_ordering":{}}}}}}}</p>
+
+<p>After generating the schema, review that Attribute names contain only the following characters: numbers: 0-9, letters: a-z and A-Z, underline: _ hyphen: - period:. and fix any invalid attributes. Wait for my next prompt with the schema data. </p>
+
+
+
+
+<p>Using the following information, put it into the JSON OCA schema package structure as given above and generate the downloadable JSON file.</p>
+
+<p>{paste schema content here including adding prompts to suggest which column matches attributes, labels, descriptions etc.}</p>                                                                                                                                                                        
+                                                                                                                                                                         
+  
+
+</div>
+
