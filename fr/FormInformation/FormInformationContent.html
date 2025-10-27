@@ -4,7 +4,7 @@
   <p>La superposition d'informations de formulaire vous permet de spécifier comment chaque attribut et son champ de réponse correspondant apparaissent dans un questionnaire ou une interface de formulaire.</p>
   
   <h3>Étiquette</h3>
-  <p>Le champ Étiquette vous permet de fournir une étiquette conviviale et spécifique à la langue pour chaque attribut. C'est ce que les utilisateurs verront dans les formulaires et questionnaires au lieu du nom technique de l'attribut. Les étiquettes doivent être claires, descriptives et appropriées pour le public cible.</p>
+  <p>Le champ Étiquette vous permet de fournir une étiquette conviviale et spécifique à la langue pour chaque attribut. C'est ce que les utilisateurs verront dans les formulaires et questionnaires au lieu du nom technique de l'attribut. Les étiquettes doivent être claires, descriptives et appropriées pour le public cible. Les étiquettes ont une limite maximale de 250 caractères.</p>
   <p>Les étiquettes sont l'endroit où votre texte de question de questionnaire apparaîtra. Cela peut inclure des phrases complètes qui fournissent des instructions claires aux utilisateurs. Par exemple, une étiquette pourrait lire : "Sur une échelle de 1 à 5, comment évaluez-vous votre expérience ?" ou "Veuillez décrire vos principales préoccupations concernant ce produit."</p>
   <p>Les étiquettes peuvent être personnalisées pour chaque langue dans votre schéma.</p>
   
@@ -12,6 +12,56 @@
   <p>Le champ Espace réservé fournit un exemple de texte ou des instructions qui apparaissent à l'intérieur des champs de saisie de formulaire pour guider les utilisateurs sur le type d'informations à saisir. Les espaces réservés sont particulièrement utiles pour les types d'attributs Texte et Tableau[Texte] où les utilisateurs doivent saisir du texte libre.</p>
   <p>Les espaces réservés ne sont disponibles que pour les types d'attributs Texte et Tableau[Texte], car ce sont les seuls types qui acceptent la saisie de texte libre des utilisateurs. Pour les autres types d'attributs (comme Numérique, Booléen, etc.), le champ d'espace réservé n'est pas modifiable.</p>
   <p>Les espaces réservés doivent fournir des conseils clairs et utiles aux utilisateurs sur le format ou le contenu attendu pour le champ.</p>
+  
+  <h3>Exemples d'Espaces Réservés avec Règles de Format</h3>
+  <p>Voici quelques exemples courants d'espaces réservés et leurs règles de format correspondantes :</p>
+  
+  <table>
+    <tr>
+      <th>Règle de Format</th>
+      <th>Exemple d'Espace Réservé</th>
+    </tr>
+    <tr>
+      <td>Code postal canadien</td>
+      <td>Entrez le code postal (ex : M5V 2H1)</td>
+    </tr>
+    <tr>
+      <td>Code postal américain</td>
+      <td>Entrez le code ZIP (ex : 12345 ou 12345-6789)</td>
+    </tr>
+    <tr>
+      <td>Coordonnées de latitude</td>
+      <td>Entrez la latitude (ex : N45°30'30.000")</td>
+    </tr>
+    <tr>
+      <td>Coordonnées de longitude</td>
+      <td>Entrez la longitude (ex : W73°34'00.000")</td>
+    </tr>
+    <tr>
+      <td>Séquence ADN basique</td>
+      <td>Entrez la séquence ADN en utilisant uniquement ATGC</td>
+    </tr>
+    <tr>
+      <td>Séquence ADN étendue</td>
+      <td>Entrez la séquence ADN avec bases ambiguës</td>
+    </tr>
+    <tr>
+      <td>Séquence ARN basique</td>
+      <td>Entrez la séquence ARN en utilisant uniquement AUGC</td>
+    </tr>
+    <tr>
+      <td>Séquence ARN étendue</td>
+      <td>Entrez la séquence ARN avec bases ambiguës</td>
+    </tr>
+    <tr>
+      <td>Séquence protéique standard</td>
+      <td>Entrez la séquence protéique avec acides aminés standard</td>
+    </tr>
+    <tr>
+      <td>Séquence protéique étendue</td>
+      <td>Entrez la séquence protéique incluant les acides aminés non standard</td>
+    </tr>
+  </table>
   
   <h3>Intégration des règles de format</h3>
   <p>La superposition d'informations de formulaire affiche les règles de format qui ont été définies pour chaque attribut. Ces règles de format aident à assurer la cohérence des données et fournissent une validation pour la saisie des utilisateurs. Les règles de format sont en lecture seule dans cette interface et doivent être configurées dans la superposition des règles de format.</p>
