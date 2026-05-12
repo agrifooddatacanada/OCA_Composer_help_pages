@@ -1,0 +1,29 @@
+
+<div>
+  <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">Overlays - Data Separator</h1>
+  <br>
+  <p>The Data Separator overlay lets you document how values in your dataset are separated and formatted. This is especially important when sharing data in flat-file formats such as CSV or TSV, or when your data contains decimal numbers or array-type attributes. Each section can be enabled or disabled independently using its checkbox.</p>
+
+  <h3>Decimal Separator</h3>
+  <p>The decimal separator is the character used to distinguish the integer part of a number from its fractional part. Two conventions are widely used around the world:</p>
+  <ul style="font-size: 20px; line-height: 30px;">
+    <li><strong>Dot ( . )</strong> – used in English-speaking countries (e.g., <code>3.14</code>).</li>
+    <li><strong>Comma ( , )</strong> – used in many European and Latin American countries (e.g., <code>3,14</code>).</li>
+  </ul>
+  <p>Enable this section and choose the separator that matches the convention used in your dataset. Note that the decimal separator and the field delimiter cannot be the same character; the interface will automatically prevent conflicting selections.</p>
+
+  <h3>File Delimiter (CSV / TSV)</h3>
+  <p>A file delimiter defines how individual fields and rows are structured in a plain-text tabular data file. Enable this section to document the exact delimiter settings used by your dataset so that anyone reading or processing it can parse it correctly.</p>
+  <ul style="font-size: 20px; line-height: 30px;">
+    <li><strong>Field delimiter</strong> – The character that separates one column from the next. Common choices are Comma (<code>,</code>), Tab (<code>\t</code>), Semicolon (<code>;</code>), and Pipe (<code>|</code>). The comma is selected by default. If you have set a comma as your decimal separator, the comma option is automatically removed from this list to prevent ambiguity.</li>
+    <li><strong>Quote character</strong> – A single character used to wrap field values that contain the delimiter or line breaks (default: <code>"</code>). Only one character is accepted.</li>
+    <li><strong>Escape character</strong> – A single character used to escape special characters within a quoted field (default: <code>\</code>). Only one character is accepted.</li>
+    <li><strong>Line terminator</strong> – The character sequence used to mark the end of each row. Choose <strong>LF (<code>\n</code>)</strong> for Unix/macOS line endings or <strong>CRLF (<code>\r\n</code>)</strong> for Windows line endings.</li>
+    <li><strong>Data start row</strong> – The row number where the actual data records begin (default: <code>1</code>). Increase this value if your file has header or metadata rows before the first data row.</li>
+  </ul>
+
+  <h3>Array Delimiter</h3>
+  <p>When one or more attributes in your schema are of an Array type, each cell in that column contains multiple values packed into a single field. The array delimiter is the character used to separate those individual values within the cell.</p>
+  <p>If your schema contains array-type attributes, this section will list each one and allow you to choose its delimiter independently. Available options are Comma (<code>,</code>), Tab (<code>\t</code>), Semicolon (<code>;</code>), and Pipe (<code>|</code>).</p>
+  <p>If none of your attributes are of an Array type, this section will indicate that and the controls will not be available.</p>
+</div>
