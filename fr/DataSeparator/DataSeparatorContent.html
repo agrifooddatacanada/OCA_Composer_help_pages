@@ -1,0 +1,29 @@
+
+<div>
+  <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">Superpositions - Séparateur de données</h1>
+  <br>
+  <p>La superposition Séparateur de données vous permet de documenter la manière dont les valeurs de votre ensemble de données sont séparées et formatées. Cela est particulièrement important lors du partage de données dans des formats de fichiers texte tels que CSV ou TSV, ou lorsque vos données contiennent des nombres décimaux ou des attributs de type tableau. Chaque section peut être activée ou désactivée indépendamment à l'aide de sa case à cocher.</p>
+
+  <h3>Séparateur décimal</h3>
+  <p>Le séparateur décimal est le caractère utilisé pour distinguer la partie entière d'un nombre de sa partie fractionnaire. Deux conventions sont largement utilisées dans le monde :</p>
+  <ul style="font-size: 20px; line-height: 30px;">
+    <li><strong>Point ( . )</strong> – utilisé dans les pays anglophones (ex. : <code>3.14</code>).</li>
+    <li><strong>Virgule ( , )</strong> – utilisé dans de nombreux pays européens et latino-américains (ex. : <code>3,14</code>).</li>
+  </ul>
+  <p>Activez cette section et choisissez le séparateur qui correspond à la convention utilisée dans votre ensemble de données. Notez que le séparateur décimal et le délimiteur de champ ne peuvent pas être le même caractère ; l'interface empêchera automatiquement les sélections conflictuelles.</p>
+
+  <h3>Délimiteur de fichier (CSV / TSV)</h3>
+  <p>Un délimiteur de fichier définit la structure des champs et des lignes dans un fichier de données tabulaires en texte brut. Activez cette section pour documenter les paramètres de délimitation exacts utilisés par votre ensemble de données, afin que toute personne lisant ou traitant ce fichier puisse l'analyser correctement.</p>
+  <ul style="font-size: 20px; line-height: 30px;">
+    <li><strong>Délimiteur de champ</strong> – Le caractère qui sépare une colonne de la suivante. Les choix courants sont la virgule (<code>,</code>), la tabulation (<code>\t</code>), le point-virgule (<code>;</code>) et la barre verticale (<code>|</code>). La virgule est sélectionnée par défaut. Si vous avez défini la virgule comme séparateur décimal, l'option virgule est automatiquement retirée de cette liste pour éviter toute ambiguïté.</li>
+    <li><strong>Caractère de citation</strong> – Un seul caractère utilisé pour encadrer les valeurs de champ contenant le délimiteur ou des sauts de ligne (défaut : <code>"</code>). Un seul caractère est accepté.</li>
+    <li><strong>Caractère d'échappement</strong> – Un seul caractère utilisé pour échapper les caractères spéciaux à l'intérieur d'un champ entre guillemets (défaut : <code>\</code>). Un seul caractère est accepté.</li>
+    <li><strong>Terminateur de ligne</strong> – La séquence de caractères utilisée pour marquer la fin de chaque ligne. Choisissez <strong>LF (<code>\n</code>)</strong> pour les fins de ligne Unix/macOS ou <strong>CRLF (<code>\r\n</code>)</strong> pour les fins de ligne Windows.</li>
+    <li><strong>Ligne de début des données</strong> – Le numéro de ligne à partir duquel commencent les enregistrements de données (défaut : <code>1</code>). Augmentez cette valeur si votre fichier comporte des lignes d'en-tête ou de métadonnées avant la première ligne de données.</li>
+  </ul>
+
+  <h3>Délimiteur de tableau</h3>
+  <p>Lorsqu'un ou plusieurs attributs de votre schéma sont de type Tableau, chaque cellule de cette colonne contient plusieurs valeurs regroupées dans un seul champ. Le délimiteur de tableau est le caractère utilisé pour séparer ces valeurs individuelles à l'intérieur de la cellule.</p>
+  <p>Si votre schéma contient des attributs de type Tableau, cette section les listera chacun et vous permettra de choisir leur délimiteur de manière indépendante. Les options disponibles sont la virgule (<code>,</code>), la tabulation (<code>\t</code>), le point-virgule (<code>;</code>) et la barre verticale (<code>|</code>).</p>
+  <p>Si aucun de vos attributs n'est de type Tableau, cette section l'indiquera et les contrôles ne seront pas disponibles.</p>
+</div>
